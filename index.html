@@ -21,44 +21,70 @@
     
 <div class="mainthing">
     <div class="enter-data">
+    <div class="budget-feedback alert alert-danger text-capitalize">budget feedback</div>
+        <form id="budget-form" class=" budget-form">
         <div class="enter-budget">
             <h2>Enter your Budget</h2>
-            <input type="text"><br>
+            <input type="text" id="budget-input"><br>
             <button class="budget-button">Calculate</button>
         </div>
-        <div>
+        </form>
+        <div class="expense-feedback alert alert-danger text-capitalize">expense feedback</div>
+        <form id="expense-form" class=" expense-form">
+        <div class="enter-expense">
             <h2>Enter your expense</h2>
-            <input type="text">
+            <input type="text" class="form-control expense-input" id="expense-input">
             <h2>Enter the amount</h2>
-            <input type="text">
+            <input type="text" class="form-control expense-input" id="amount-input">
             <button class="budget-button">Add expense</button>
         </div>
+    </form>
+
     </div>
     <div class="showing-data">
         <div class="budget">
             <div class="budget1">
                 <h3>Budget</h3>
-                <input type="text">
+                <h4 id="budget"><span>$ </span><span id="budget-amount">0</span></h4>
             </div>
             <div class="expenses1">
                 <h3>Expenses</h3>
-                <input type="text">
+                <h4 id="expense"><span>$ </span><span id="expense-amount">0</span></h4>
             </div>
             <div class="balance1">
                 <h3>Balance</h3>
-                <input type="text">
+                <h4 class="balance" id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
             </div>
         </div>
-        <div class="expenses">
-            <div class="expense-title">
+            <div class="expense-list" id="expense-list">
 
-            </div>
-            <div class="expense-value">
-
-            </div>
+                <div class="expense-list__info">
+                 <h5 class="list-item">expense title</h5>
+                 <h5 class="list-item">expense value</h5>
+                 <h5 class="list-item"></h5>
+                </div>
+                <!-- single expense -->
+         
+                <!-- <div class="expense">
+                 <div class="expense-item d-flex justify-content-between align-items-baseline">
+                  <h6 class="expense-title mb-0 text-uppercase list-item">- title</h6>
+                  <h5 class="expense-amount mb-0 list-item">amount</h5>
+                  <div class="expense-icons list-item">
+                   <a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+                    <i class="fas fa-edit"></i>
+                   </a>
+                   <a href="#" class="delete-icon" data-id="${expense.id}">
+                    <i class="fas fa-trash"></i>
+                   </a>
+                  </div>
+                 </div>
+                </div> -->
+         
+                <!-- end of single expense -->
+         
+               </div>
         </div>
     </div>
-</div>
 </main>
 </body>
 
