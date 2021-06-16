@@ -101,8 +101,21 @@ h1 {
     color: greenyellow;
 }
 .showBlack {
-    color: black;
+    color: #FCFFF5;
 }
 .showRed {
     color: red;
+}
+.expense-list {
+    color: #FCFFF5;
+}
+.budget h3 {
+    color: #FCFFF5;
+}
+.budget h4 {
+    text-align: center;
+}
+.edit-icon, .delete-icon {
+    text-decoration: none;
+    color: #FCFFF5;
 }
