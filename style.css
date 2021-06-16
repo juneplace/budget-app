@@ -7,7 +7,6 @@ html {
     }
 * {
     font-weight: lighter;
-    color: #FCFFF5;
 }
 h1 {
     color: #193441;
@@ -77,7 +76,7 @@ h1 {
 }
 .enter-data input{
     width: 100%;
-
+    color: #3E606F;
 }
 .enter-expense {
     margin-top: 50px;
@@ -90,4 +89,20 @@ h1 {
     padding: 30px;
     border-radius: 50px;
 
+}
+.budget-feedback, .expense-feedback {
+    display: none;
+}
+.showItem {
+    display: block;
+    color: red;
+  }
+.showGreen {
+    color: greenyellow;
+}
+.showBlack {
+    color: black;
+}
+.showRed {
+    color: red;
 }
